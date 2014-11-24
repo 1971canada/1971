@@ -3,7 +3,7 @@
 	<head>
 		<title>1971</title>
 		
-		<link href='http://fonts.googleapis.com/css?family=Fjalla+One|Rokkitt:400,700|Titillium+Web:400,600,700,300,200' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Fjalla+One|Rokkitt:400,700|Titillium+Web:400,600,700,300,200' rel='stylesheet' type='text/css'>
 		<style type="text/css">
 			html {
 				box-sizing: border-box;
@@ -137,7 +137,8 @@
 			</section>
 			
 			<section id="shows" class="container">
-				shows
+				<a href="http://www.songkick.com/artists/8144908" class="songkick-widget" data-theme="dark" data-font-color="#EEEEEE" data-background-color="transparent" data-other-artists="on"></a>
+				<script src="//widget.songkick.com/widget.js"></script>
 			</section>
 			
 			<section id="merch" class="container">
