@@ -3,140 +3,36 @@
 	<head>
 		<title>1971 &ndash; Punk rock from the boonies, eh.</title>
 		
-		<link href='//fonts.googleapis.com/css?family=Fjalla+One|Rokkitt:400,700|Titillium+Web:400,600,700,300,200' rel='stylesheet' type='text/css'>
-		<style type="text/css">
-			html {
-				box-sizing: border-box;
-			}
-			
-			*, *:before, *:after {
-				box-sizing: inherit;
-				margin:0;
-				padding:0;
-			}
-			
-			html, body {
-				width:100%;
-				height:100%;
-			}
-			
-			body {
-				font-family:Helvetica, Arial, sans-serif;
-				background:#111;
-				color:#EEE;
-				margin:0;
-				padding:0;
-				font-size:62.5%;
-				font-family:'Titillium Web', sans-serif;
-			}
-			
-			a {
-				color:#EEE;
-				text-decoration:none;
-			}
-			
-			h1 {
-				font-size:10rem;
-				font-family:'Fjalla One', sans-serif;
-				
-				width:100%;
-				height:100%;
-				background-image:url(img/woods.jpg);
-				background-size:cover;
-				text-align:center;
-				position:fixed;
-				top:0;
-				left:0;
-				z-index:-1;
-			}
-			
-			h1:before {
-				content: '';
-				display: inline-block;
-				height: 100%;
-				vertical-align: middle;
-				margin-right: -0.25em; /* Adjusts for spacing */
-			}
-			
-			h1 span {
-				display: inline-block;
-				vertical-align: middle;
-				width: 300px;
-			}
-			
-			header {
-				width:100%;
-				height:100%;
-			}
-			
-			nav {
-				width:100%;
-				background:rgba(0, 0, 0, 0.5);
-				font-size:1rem;
-				position:absolute;
-				bottom:0;
-				left:0;
-				text-align:center;
-			}
-			
-			.nav-sticky {
-				position:fixed;
-				top:0;
-				left:0;
-				height:auto;
-				bottom:auto;
-			}
-			
-			nav ul li {
-				list-style:none;
-				display:inline-block;
-			}
-			
-			nav ul li a {
-				display:inline-block;
-				padding:10px 15px;
-			}
-			
-			.content {
-				background:rgba(0, 0, 0, 1);
-			}
-			
-			.content::after {
-				content: " "; /* Older browser do not support empty content */
-				visibility: hidden;
-				display: block;
-				height: 0;
-				clear: both;
-			}
-			
-			.container {
-				max-width:640px;
-				margin:0 auto;
-				padding:15px;
-			}
-			
-			.albums {
-				list-style:none;
-			}
-			
-			.albums li {
-				clear:both;
-			}
-			
-			.album {
-				border:0;
-				width:200px;
-				height:200px;
-				float:left;
-				padding:0 15px 15px 0;
-			}
-			
-			.album-title {
-				font-size:1rem;
-			}
-		</style>
+		<meta name="description" content="Punk rock birthed in the woods of the Vernon, Ontario.">
+		
+		<!-- Facebook share -->
+		<meta property="og:url" content="http://www.1971canada.com"/>
+		<meta property="og:title" content="1971"/>
+		<meta property="og:description" content="Punk rock birthed in the woods of the Vernon, Ontario."/>
+		<meta property="og:image" content="http://www.1971canada.com/img/share.jpg"/>
+		
+		<!-- Twitter share -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="1971">
+		<meta name="twitter:description" content="Punk rock birthed in the woods of the Vernon, Ontario.">
+		<meta name="twitter:image:src" content="http://www.1971canada.com/img/share.jpg">
+		<meta name="twitter:domain" content="www.1971canada.com">
+		
+		<!-- Mobile configuration -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-title" content="1971">
+		
+		<!-- Icons -->
+		<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+		<link rel="apple-touch-icon" href="/img/touch-icon.png">
+		
+		<link href="//fonts.googleapis.com/css?family=Fjalla+One|Rokkitt:400,700|Titillium+Web:400,600,700,300,200" rel="stylesheet" type="text/css">
+		<link href="/css/main.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
+		<div id="fb-root"></div>
+		
 		<h1><span>1971</span></h1>
 		
 		<header>
@@ -158,39 +54,75 @@
 			</nav>
 		</header>
 		
-	
 		<div class="content">
 			<section id="music" class="container">
+				<h2>Music</h2>
 				<ul class="albums">
 					<li>
-						<iframe class="album" src="https://bandcamp.com/EmbeddedPlayer/album=1828195228/size=large/bgcol=333333/linkcol=2ebd35/minimal=true/transparent=true/" seamless><a href="http://1971canada.bandcamp.com/album/s-t">S/T by 1971</a></iframe>
-						<p class="album-title">S/T</p>
+						<div class="album">
+							<iframe src="https://bandcamp.com/EmbeddedPlayer/album=1828195228/size=large/bgcol=333333/linkcol=2ebd35/minimal=true/transparent=true/" seamless><a href="http://1971canada.bandcamp.com/album/s-t">S/T by 1971</a></iframe>
+						</div>
+						<h3 class="album-title">S/T</h3>
 						<p class="album-year">2014</p>
+						<ol class="album-tracks">
+							<li>1971</li>
+							<li>True Grit</li>
+							<li>Gentlemen Wash Their Hands</li>
+							<li>Existential Crisis For Only $400 A Month</li>
+							<li>White Lies</li>
+							<li>The Movement</li>
+						</ol>
 					</li>
 					<li>
-						<iframe class="album" src="https://bandcamp.com/EmbeddedPlayer/album=3081933480/size=large/bgcol=333333/linkcol=2ebd35/minimal=true/transparent=true/" seamless><a href="http://1971canada.bandcamp.com/album/s-t">Law of Club and Fang by 1971</a></iframe>
-						<p class="album-title">Law of Club and Fang</p>
+						<div class="album">
+							<iframe src="https://bandcamp.com/EmbeddedPlayer/album=3081933480/size=large/bgcol=333333/linkcol=2ebd35/minimal=true/transparent=true/" seamless><a href="http://1971canada.bandcamp.com/album/s-t">Law of Club and Fang by 1971</a></iframe>
+						</div>
+						<h3 class="album-title">Law of Club and Fang</h3>
 						<p class="album-year">2012</p>
+						<ol class="album-tracks">
+							<li>1971</li>
+							<li>True Grit</li>
+							<li>Gentlemen Wash Their Hands</li>
+							<li>Existential Crisis For Only $400 A Month</li>
+							<li>White Lies</li>
+							<li>The Movement</li>
+						</ol>
 					</li>
 					<li>
-						<iframe class="album" src="https://bandcamp.com/EmbeddedPlayer/album=1443907012/size=large/bgcol=333333/linkcol=2ebd35/minimal=true/transparent=true/" seamless><a href="http://1971canada.bandcamp.com/album/s-t">Demo by 1971</a></iframe>
-						<p class="album-title">Demo</p>
+						<div class="album">
+							<iframe src="https://bandcamp.com/EmbeddedPlayer/album=1443907012/size=large/bgcol=333333/linkcol=2ebd35/minimal=true/transparent=true/" seamless><a href="http://1971canada.bandcamp.com/album/s-t">Demo by 1971</a></iframe>
+						</div>
+						<h3 class="album-title">Demo</h3>
 						<p class="album-year">2011</p>
+						<ol class="album-tracks">
+							<li>1971</li>
+							<li>True Grit</li>
+							<li>Gentlemen Wash Their Hands</li>
+							<li>Existential Crisis For Only $400 A Month</li>
+							<li>White Lies</li>
+							<li>The Movement</li>
+						</ol>
 					</li>
 				</ul>
 			</section>
 			
 			<section id="shows" class="container">
+				<h2>Shows</h2>
 				<a href="http://www.songkick.com/artists/8144908" class="songkick-widget" data-theme="dark" data-font-color="#EEEEEE" data-background-color="transparent" data-other-artists="on"></a>
-				<script src="//widget.songkick.com/widget.js"></script>
 			</section>
 			
 			<section id="merch" class="container">
-				merch
+				<h2>Merch</h2>
 			</section>
 			
 			<section id="contact" class="container">
-				contact
+				<h2>Contact</h2>
+				
+				<div class="fb-like-box" data-href="https://www.facebook.com/pages/1971/216714698355083" data-colorscheme="dark" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false"></div>
+				
+				<p>
+					<a href="https://twitter.com/1971canada" class="twitter-follow-button" data-show-count="false">Follow @1971canada</a>
+				</p>
 			</section>
 		</div>
 		
@@ -198,45 +130,32 @@
 			
 		</footer>
 		
-		<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="/js/jquery.js"></script>
+		<script src="/js/main.js"></script>
+		
+		<!-- Songkick / Tourbox -->
+		<script src="//widget.songkick.com/widget.js"></script>
+		<!-- Facebook -->
 		<script>
-			$window = $(window);
-			$title = $('h1');
-			$titleSpan = $('h1 span');
-			$nav = $('nav');
-			
-			$window.on('hashchange', function(ev) {
-				var $sections = $('.content section');
-				
-				$sections.each(function() {
-					var $section = $(this);
-					
-					if (window.location.hash.indexOf($section.attr('id')) != -1) {
-						$('html, body').animate({
-							scrollTop:$section.position().top
-						});
-					}
+			window.fbAsyncInit = function() {
+				FB.init({
+					appId      : '605014902959527',
+					xfbml      : true,
+					version    : 'v2.2'
 				});
-				
-				ev.preventDefault();
-			}).trigger('hashchange');
-			
-			$window.on('scroll', function(ev) {
-				var windowHeight = $window.height();
-				var percent = $window.scrollTop() / (windowHeight - $nav.height());
-				
-				if (percent >=1) {
-					$nav.addClass('nav-sticky');
-					
-				} else {
-					$nav.removeClass('nav-sticky');
-				}
-				
-				
-				$title.css('background-position', '0% ' + (percent * (-windowHeight / 4)) + 'px');
-				$titleSpan.css('margin-top', (percent * -windowHeight) + 'px');
-				$titleSpan.css('opacity', 1 - percent * 2);
-			}).trigger('scroll');
+			};
+
+			(function(d, s, id){
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) {return;}
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_US/sdk.js";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<!-- Twitter -->
+		<script>
+			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 		</script>
 	</body>
 </html>

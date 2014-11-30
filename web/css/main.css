@@ -1,0 +1,176 @@
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+html, body {
+	width:100%;
+	height:100%;
+}
+
+body {
+	font-family:Helvetica, Arial, sans-serif;
+	background:#111;
+	color:#EEE;
+	margin:0;
+	padding:0;
+	font-family:'Titillium Web', sans-serif;
+}
+
+a {
+	color:#EEE;
+	text-decoration:none;
+}
+
+h1 {
+	font-size:10rem;
+	font-family:'Fjalla One', sans-serif;
+	padding:0;
+	margin:0;
+	
+	width:100%;
+	height:100%;
+	background-image:url(../img/woods.jpg);
+	background-size:cover;
+	text-align:center;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:-1;
+}
+
+h1:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+h1 span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 300px;
+}
+
+h2 {
+	text-align:center;
+}
+
+header {
+	width:100%;
+	height:100%;
+}
+
+nav {
+	width:100%;
+	background:rgba(0, 0, 0, 0.5);
+	font-size:1rem;
+	position:absolute;
+	bottom:0;
+	left:0;
+	text-align:center;
+}
+
+.nav-sticky {
+	position:fixed;
+	top:0;
+	left:0;
+	height:auto;
+	bottom:auto;
+	z-index:1;
+}
+
+nav ul {
+	padding:0;
+	margin:0;
+}
+
+nav ul li {
+	list-style:none;
+	display:inline-block;
+	width:23%;
+	max-width:150px;
+}
+
+nav ul li a {
+	display:inline-block;
+	padding:10px 0;
+	width:100%;
+}
+
+.content {
+	background:#111;
+	background-image:url(../img/woods-inverted.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center bottom;
+}
+
+.content::after {
+	content: " "; /* Older browser do not support empty content */
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.container {
+	max-width:960px;
+	margin:0 auto;
+	padding:15px;
+}
+
+.albums {
+	list-style:none;
+}
+
+.albums li {
+	clear:both;
+	padding:0 0 15px 0;
+}
+
+.albums li::after {
+	content: " "; /* Older browser do not support empty content */
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.album {
+	width:40%;
+	float:left;
+	position:relative;
+}
+
+.album:before {
+	content: "";
+	display: block;
+	margin-top: 100%;
+}
+
+.album iframe {
+	border:0;
+	position:absolute;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	right:0px;
+	width:100%;
+	height:100%;
+}
+
+.album-title {
+	font-size:1rem;
+}
+
+.album-tracks {
+	clear:none;
+	list-style:numeric;
+	float:left;
+}
