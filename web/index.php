@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>1971</title>
+		<title>1971 &ndash; Punk rock from the boonies, eh.</title>
 		
 		<link href='//fonts.googleapis.com/css?family=Fjalla+One|Rokkitt:400,700|Titillium+Web:400,600,700,300,200' rel='stylesheet' type='text/css'>
 		<style type="text/css">
@@ -13,6 +13,11 @@
 				box-sizing: inherit;
 				margin:0;
 				padding:0;
+			}
+			
+			html, body {
+				width:100%;
+				height:100%;
 			}
 			
 			body {
@@ -30,17 +35,56 @@
 				text-decoration:none;
 			}
 			
-			header {
+			h1 {
+				font-size:10rem;
+				font-family:'Fjalla One', sans-serif;
+				
 				width:100%;
-				background-image:url(img/woods.png);
+				height:100%;
+				background-image:url(img/woods.jpg);
 				background-size:cover;
 				text-align:center;
-				border-top:10px solid #666;
+				position:fixed;
+				top:0;
+				left:0;
+				z-index:-1;
+			}
+			
+			h1:before {
+				content: '';
+				display: inline-block;
+				height: 100%;
+				vertical-align: middle;
+				margin-right: -0.25em; /* Adjusts for spacing */
+			}
+			
+			h1 span {
+				display: inline-block;
+				vertical-align: middle;
+				width: 300px;
+			}
+			
+			header {
+				width:100%;
+				height:100%;
 			}
 			
 			nav {
+				width:100%;
 				background:rgba(0, 0, 0, 0.5);
 				font-size:1rem;
+				position:absolute;
+				bottom:0;
+				left:0;
+				text-align:center;
+			}
+			
+			.nav-sticky {
+				position:fixed;
+				top:0;
+				left:0;
+				height:auto;
+				bottom:auto;
 			}
 			
 			nav ul li {
@@ -53,23 +97,22 @@
 				padding:10px 15px;
 			}
 			
-			h1 {
-				padding:50px 0;
-				font-size:6rem;
-				font-family:'Rokkitt', serif;
-				font-family:'Fjalla One', sans-serif;
-				
+			.content {
+				background:rgba(0, 0, 0, 1);
+			}
+			
+			.content::after {
+				content: " "; /* Older browser do not support empty content */
+				visibility: hidden;
+				display: block;
+				height: 0;
+				clear: both;
 			}
 			
 			.container {
 				max-width:640px;
 				margin:0 auto;
 				padding:15px;
-				display:none;
-			}
-			
-			.container:first-child {
-				display:block;
 			}
 			
 			.albums {
@@ -94,9 +137,9 @@
 		</style>
 	</head>
 	<body>
+		<h1><span>1971</span></h1>
+		
 		<header>
-			<h1>1971</h1>
-			
 			<nav>
 				<ul>
 					<li>
@@ -115,6 +158,7 @@
 			</nav>
 		</header>
 		
+	
 		<div class="content">
 			<section id="music" class="container">
 				<ul class="albums">
@@ -154,20 +198,45 @@
 			
 		</footer>
 		
+		<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script>
-			window.onhashchange = function(ev) {
-				var $sections = document.querySelectorAll('.content section');
+			$window = $(window);
+			$title = $('h1');
+			$titleSpan = $('h1 span');
+			$nav = $('nav');
+			
+			$window.on('hashchange', function(ev) {
+				var $sections = $('.content section');
 				
-				for (var i = 0; i < $sections.length; i++) {
-					var $section = $sections[i];
+				$sections.each(function() {
+					var $section = $(this);
 					
-					if (window.location.hash.indexOf($section.id) != -1) {
-						$section.style.display = 'block';
-					} else {
-						$section.style.display = 'none';
+					if (window.location.hash.indexOf($section.attr('id')) != -1) {
+						$('html, body').animate({
+							scrollTop:$section.position().top
+						});
 					}
+				});
+				
+				ev.preventDefault();
+			}).trigger('hashchange');
+			
+			$window.on('scroll', function(ev) {
+				var windowHeight = $window.height();
+				var percent = $window.scrollTop() / (windowHeight - $nav.height());
+				
+				if (percent >=1) {
+					$nav.addClass('nav-sticky');
+					
+				} else {
+					$nav.removeClass('nav-sticky');
 				}
-			};
+				
+				
+				$title.css('background-position', '0% ' + (percent * (-windowHeight / 4)) + 'px');
+				$titleSpan.css('margin-top', (percent * -windowHeight) + 'px');
+				$titleSpan.css('opacity', 1 - percent * 2);
+			}).trigger('scroll');
 		</script>
 	</body>
 </html>
