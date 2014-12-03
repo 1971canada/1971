@@ -38,85 +38,101 @@
 		<header>
 			<nav>
 				<ul>
-					<li>
-						<a href="#music">Music</a>
-					</li>
-					<li>
-						<a href="#shows">Shows</a>
-					</li>
-					<li>
-						<a href="#merch">Merch</a>
-					</li>
-					<li>
-						<a href="#contact">Contact</a>
-					</li>
+					<li><a href="#music">Music</a>
+					<li><a href="#band">Band</a>
+					<li><a href="#shows">Shows</a>
+					<li><a href="#merch">Merch</a>
+					<li><a href="#contact">Contact</a>
 				</ul>
 			</nav>
 		</header>
 		
 		<div class="content">
 			<section id="music" class="container">
-				<h2>Music</h2>
+				<h2 class="title">Music</h2 class="title">
 				<ul class="albums">
 					<li>
 						<div class="album">
 							<iframe src="https://bandcamp.com/EmbeddedPlayer/album=1828195228/size=large/bgcol=333333/linkcol=2ebd35/minimal=true/transparent=true/" seamless><a href="http://1971canada.bandcamp.com/album/s-t">S/T by 1971</a></iframe>
 						</div>
-						<h3 class="album-title">S/T</h3>
-						<p class="album-year">2014</p>
-						<ol class="album-tracks">
-							<li>1971</li>
-							<li>True Grit</li>
-							<li>Gentlemen Wash Their Hands</li>
-							<li>Existential Crisis For Only $400 A Month</li>
-							<li>White Lies</li>
-							<li>The Movement</li>
-						</ol>
+						<div class="album-info">
+							<h3 class="album-title">S/T</h3>
+							<p class="album-year">2014</p>
+							<ol class="album-tracks">
+								<li>1971</li>
+								<li>True Grit</li>
+								<li>Gentlemen Wash Their Hands</li>
+								<li>Existential Crisis For Only $400 A Month</li>
+								<li>White Lies</li>
+								<li>The Movement</li>
+							</ol>
+							
+							<p>Available on <a href="#">Bandcamp</a>.</p>
+						</div>
 					</li>
 					<li>
 						<div class="album">
 							<iframe src="https://bandcamp.com/EmbeddedPlayer/album=3081933480/size=large/bgcol=333333/linkcol=2ebd35/minimal=true/transparent=true/" seamless><a href="http://1971canada.bandcamp.com/album/s-t">Law of Club and Fang by 1971</a></iframe>
 						</div>
-						<h3 class="album-title">Law of Club and Fang</h3>
-						<p class="album-year">2012</p>
-						<ol class="album-tracks">
-							<li>1971</li>
-							<li>True Grit</li>
-							<li>Gentlemen Wash Their Hands</li>
-							<li>Existential Crisis For Only $400 A Month</li>
-							<li>White Lies</li>
-							<li>The Movement</li>
-						</ol>
+						<div class="album-info">
+							<h3 class="album-title">Law of Club and Fang</h3>
+							<p class="album-year">2012</p>
+							<ol class="album-tracks">
+								<li>1971</li>
+								<li>True Grit</li>
+								<li>Gentlemen Wash Their Hands</li>
+								<li>Existential Crisis For Only $400 A Month</li>
+								<li>White Lies</li>
+								<li>The Movement</li>
+							</ol>
+							
+							<p>Available on <a href="#">Bandcamp</a>.</p>
+						</div>
 					</li>
 					<li>
 						<div class="album">
 							<iframe src="https://bandcamp.com/EmbeddedPlayer/album=1443907012/size=large/bgcol=333333/linkcol=2ebd35/minimal=true/transparent=true/" seamless><a href="http://1971canada.bandcamp.com/album/s-t">Demo by 1971</a></iframe>
 						</div>
-						<h3 class="album-title">Demo</h3>
-						<p class="album-year">2011</p>
-						<ol class="album-tracks">
-							<li>1971</li>
-							<li>True Grit</li>
-							<li>Gentlemen Wash Their Hands</li>
-							<li>Existential Crisis For Only $400 A Month</li>
-							<li>White Lies</li>
-							<li>The Movement</li>
-						</ol>
+						<div class="album-info">
+							<h3 class="album-title">Demo</h3>
+							<p class="album-year">2011</p>
+							<ol class="album-tracks">
+								<li>1971</li>
+								<li>True Grit</li>
+								<li>Gentlemen Wash Their Hands</li>
+								<li>Existential Crisis For Only $400 A Month</li>
+								<li>White Lies</li>
+								<li>The Movement</li>
+							</ol>
+							
+							<p>Available on <a href="#">Bandcamp</a>.</p>
+						</div>
 					</li>
 				</ul>
 			</section>
 			
+			<section id="band" class="container">
+				<h2 class="title">Band</h2 class="title">
+				
+				<img class="band-picture" src="img/1971.jpg" alt="Band picture" />
+				
+				<div class="band-bio">
+					<p>Punk rock birthed in the woods of the Vernon, Ontario</p>
+					<p>Lorem ipsum dolor sit amet.</p>
+				</div>
+			</section>
+			
 			<section id="shows" class="container">
-				<h2>Shows</h2>
-				<a href="http://www.songkick.com/artists/8144908" class="songkick-widget" data-theme="dark" data-font-color="#EEEEEE" data-background-color="transparent" data-other-artists="on"></a>
+				<h2 class="title">Shows</h2 class="title">
+				<a href="http://www.songkick.com/artists/341631" class="songkick-widget" data-theme="light" data-font-color="#fefefe" data-background-color="transparent">Tour dates</a>
 			</section>
 			
 			<section id="merch" class="container">
-				<h2>Merch</h2>
+				<h2 class="title">Merch</h2 class="title">
 			</section>
 			
 			<section id="contact" class="container">
-				<h2>Contact</h2>
+				<h2 class="title">Contact</h2 class="title">
 				
 				<div class="fb-like-box" data-href="https://www.facebook.com/pages/1971/216714698355083" data-colorscheme="dark" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false"></div>
 				
