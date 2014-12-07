@@ -22,10 +22,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-title" content="1971">
+		<link rel="apple-touch-icon" href="/img/touch-icon.png">
 		
 		<!-- Icons -->
 		<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
-		<link rel="apple-touch-icon" href="/img/touch-icon.png">
 		
 		<link href="/css/main.css" rel="stylesheet" type="text/css">
 	</head>
@@ -48,7 +48,7 @@
 		
 		<div class="content">
 			<section id="music" class="container">
-				<h2 class="title">Music</h2 class="title">
+				<h2 class="title">Music</h2>
 				<ul class="list">
 					<li class="cf">
 						<div class="list-pic album-embed">
@@ -108,7 +108,7 @@
 			</section>
 			
 			<section id="band" class="container cf">
-				<h2 class="title">Band</h2 class="title">
+				<h2 class="title">Band</h2>
 				
 				<div class="list-pic">
 					<img src="img/1971.jpg" alt="Band picture" />
@@ -127,12 +127,12 @@
 			</section>
 			
 			<section id="shows" class="container">
-				<h2 class="title">Shows</h2 class="title">
+				<h2 class="title">Shows</h2>
 				<a href="http://www.songkick.com/artists/341631" class="songkick-widget" data-theme="light" data-font-color="#fefefe" data-background-color="transparent">Tour dates</a>
 			</section>
 			
 			<section id="merch" class="container">
-				<h2 class="title">Merch</h2 class="title">
+				<h2 class="title">Merch</h2>
 				
 				<ul class="list">
 					<li class="cf">
@@ -200,11 +200,7 @@
 			</section>
 		</div>
 		
-		<footer>
-			
-		</footer>
-		
-		<script src="/js/jquery.js"></script>
+		<script src="/js/jquery.min.js"></script>
 		<script src="/js/main.js"></script>
 		
 		<!-- Songkick / Tourbox -->

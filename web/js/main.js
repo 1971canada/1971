@@ -4,23 +4,22 @@ var $titleSpan = $('h1 span');
 var $nav = $('nav');
 var $containers = $('.container');
 
-$window.on('hashchange', function(ev) {
-	var $sections = $('.content section');
-	
-	$sections.each(function() {
-		var $section = $(this);
-		
-		if (window.location.hash.indexOf($section.attr('id')) != -1) {
-			$('html, body').animate({
-				scrollTop:$section.position().top
-			});
-		}
-	});
-	
-	$nav.find('a').removeClass('active').filter('[href="' + window.location.hash + '"]').addClass('active');
-	
+$nav.find('a').on('click', function(ev) {
 	ev.preventDefault();
-}).trigger('hashchange');
+	
+	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		var target = $(this.hash);
+		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		if (target.length) {
+			$('html,body').animate({
+				scrollTop: target.offset().top
+			}, 500, function() {
+				window.location.hash = $(ev.currentTarget).attr('href').replace(/^#/, '');
+			});
+			return false;
+		}
+	}
+});
 
 $window.on('scroll', function(ev) {
 	var windowHeight = $window.height();
