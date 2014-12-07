@@ -3,6 +3,8 @@ var $title = $('h1');
 var $titleSpan = $('h1 span');
 var $nav = $('nav');
 
+$('.container').css('min-height', $window.height() + 'px');
+
 $window.on('hashchange', function(ev) {
 	var $sections = $('.content section');
 	
