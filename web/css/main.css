@@ -114,6 +114,18 @@ a {
 	color:#EEE;
 }
 
+ul, ol {
+	padding-left:1rem;
+}
+
+.cf::after {
+	content: " "; /* Older browser do not support empty content */
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
 h1 {
 	font-size:10rem;
 	padding:0;
@@ -190,10 +202,15 @@ nav {
 	bottom:auto;
 	z-index:1;
 	font-size:0.7rem;
+	background:rgba(0, 0, 0, 0.95);
 }
 
-.nav-sticky li {
+.nav-sticky li, .nav-sticky li:first-child  {
 	border-color:#333;
+}
+
+.nav-sticky a {
+	padding:0.5rem;
 }
 
 nav ul {
@@ -214,8 +231,8 @@ nav ul li {
 	transition: border-color 250ms ease-out;
 }
 
-nav ul li:last-child {
-	border-right:none;
+nav ul li:first-child {
+	border-left:1px solid #8D826E;
 }
 
 nav ul li a {
@@ -225,18 +242,16 @@ nav ul li a {
 	text-decoration:none;
 }
 
+nav ul li a.active,
 nav ul li a:hover {
 	color:#8C7F6E;
 	background:rgba(255, 255, 255, 0.05);
 }
 
 .title {
-	margin:0 0 2rem 0;
-	padding:2rem 0 0 0;
-	height:1px;
-	text-indent:-10000px;
 	border-bottom:1px solid #333;
-	
+	padding:3rem 0 0 0;
+	margin:0 0 1rem 0;
 }
 
 .content {
@@ -248,54 +263,40 @@ nav ul li a:hover {
 }
 
 .container {
-	max-width:960px;
+	max-width:860px;
 	margin:0 auto;
 	padding:0 15px;
+	overflow:hidden;
 }
 
-.container::after {
-	content: " "; /* Older browser do not support empty content */
-	visibility: hidden;
-	display: block;
-	height: 0;
-	clear: both;
-}
-
-.albums {
+.list {
 	list-style:none;
 	margin:0;
 	padding:0;
 }
 
-.albums li {
+.list li {
 	clear:both;
-	padding:0 0 1rem 0;
+	padding-bottom:1rem;
 }
-
-.albums li:last-child {
+ 
+.list li:last-child {
 	padding-bottom:0;
 }
 
-.albums li::after {
-	content: " "; /* Older browser do not support empty content */
-	visibility: hidden;
-	display: block;
-	height: 0;
-	clear: both;
-}
-.album {
+.list-pic {
 	width:40%;
 	float:left;
 	position:relative;
 }
 
-.album:before {
+.list-pic.album-embed:before {
 	content: "";
 	display: block;
 	margin-top: 100%;
 }
 
-.album iframe {
+.list-pic.album-embed iframe {
 	border:0;
 	position:absolute;
 	top:0px;
@@ -306,11 +307,21 @@ nav ul li a:hover {
 	height:100%;
 }
 
-.album-info {
+.list-pic img {
+	width:100%;
+	height:auto;
+}
+
+.list-info {
 	width:60%;
 	float:left;
 	position:relative;
 	padding:0 0 0 1rem;
+}
+
+.list-info *:first-child {
+	margin-top:0;
+	padding-top:0;
 }
 
 .album-title {
@@ -328,16 +339,17 @@ nav ul li a:hover {
 	padding:0 0 0.9rem 0;
 }
 
-.band-picture {
-	width:40%;
-	height:auto;
-	float:left;
-	display:block;
-}
-
-.band-bio {
-	width:60%;
-	height:auto;
-	float:left;
-	padding:0 0 0 1rem;
+@media (max-width: 700px) {
+	
+	html {
+		font-size:70%;
+	}
+	
+	nav ul li:first-child {
+		border-left:none;
+	}
+	
+	nav ul li:last-child {
+		border-right:none;
+	}
 }

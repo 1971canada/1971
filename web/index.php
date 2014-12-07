@@ -6,17 +6,17 @@
 		<meta name="description" content="Punk rock birthed in the woods of the Vernon, Ontario.">
 		
 		<!-- Facebook share -->
-		<meta property="og:url" content="http://www.1971canada.com"/>
+		<meta property="og:url" content="http://<?php echo $_SERVER['SERVER_NAME']; ?>"/>
 		<meta property="og:title" content="1971"/>
 		<meta property="og:description" content="Punk rock birthed in the woods of the Vernon, Ontario."/>
-		<meta property="og:image" content="http://www.1971canada.com/img/share.jpg"/>
+		<meta property="og:image" content="http://<?php echo $_SERVER['SERVER_NAME']; ?>/img/share.jpg"/>
 		
 		<!-- Twitter share -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:title" content="1971">
 		<meta name="twitter:description" content="Punk rock birthed in the woods of the Vernon, Ontario.">
-		<meta name="twitter:image:src" content="http://www.1971canada.com/img/share.jpg">
-		<meta name="twitter:domain" content="www.1971canada.com">
+		<meta name="twitter:image:src" content="http://<?php echo $_SERVER['SERVER_NAME']; ?>/img/share.jpg">
+		<meta name="twitter:domain" content="<?php echo $_SERVER['SERVER_NAME']; ?>">
 		
 		<!-- Mobile configuration -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +27,6 @@
 		<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
 		<link rel="apple-touch-icon" href="/img/touch-icon.png">
 		
-		<link href="//fonts.googleapis.com/css?family=Fjalla+One|Rokkitt:400,700|Titillium+Web:400,600,700,300,200" rel="stylesheet" type="text/css">
 		<link href="/css/main.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
@@ -50,12 +49,12 @@
 		<div class="content">
 			<section id="music" class="container">
 				<h2 class="title">Music</h2 class="title">
-				<ul class="albums">
-					<li>
-						<div class="album">
+				<ul class="list">
+					<li class="cf">
+						<div class="list-pic album-embed">
 							<iframe src="https://bandcamp.com/EmbeddedPlayer/album=1828195228/size=large/bgcol=333333/linkcol=2ebd35/minimal=true/transparent=true/" seamless><a href="http://1971canada.bandcamp.com/album/s-t">S/T by 1971</a></iframe>
 						</div>
-						<div class="album-info">
+						<div class="list-info">
 							<h3 class="album-title">S/T</h3>
 							<p class="album-year">2014</p>
 							<ol class="album-tracks">
@@ -70,39 +69,36 @@
 							<p>Available on <a href="#">Bandcamp</a>.</p>
 						</div>
 					</li>
-					<li>
-						<div class="album">
+					<li class="cf">
+						<div class="list-pic album-embed">
 							<iframe src="https://bandcamp.com/EmbeddedPlayer/album=3081933480/size=large/bgcol=333333/linkcol=2ebd35/minimal=true/transparent=true/" seamless><a href="http://1971canada.bandcamp.com/album/s-t">Law of Club and Fang by 1971</a></iframe>
 						</div>
-						<div class="album-info">
+						<div class="list-info">
 							<h3 class="album-title">Law of Club and Fang</h3>
 							<p class="album-year">2012</p>
 							<ol class="album-tracks">
-								<li>1971</li>
-								<li>True Grit</li>
-								<li>Gentlemen Wash Their Hands</li>
-								<li>Existential Crisis For Only $400 A Month</li>
-								<li>White Lies</li>
-								<li>The Movement</li>
+								<li>Law of Club and Fang</li>
+								<li>As The Lamb</li>
+								<li>The War</li>
+								<li>The Dawn</li>
+								<li>What Will We Find?</li>
 							</ol>
 							
 							<p>Available on <a href="#">Bandcamp</a>.</p>
 						</div>
 					</li>
-					<li>
-						<div class="album">
+					<li class="cf">
+						<div class="list-pic album-embed">
 							<iframe src="https://bandcamp.com/EmbeddedPlayer/album=1443907012/size=large/bgcol=333333/linkcol=2ebd35/minimal=true/transparent=true/" seamless><a href="http://1971canada.bandcamp.com/album/s-t">Demo by 1971</a></iframe>
 						</div>
-						<div class="album-info">
+						<div class="list-info">
 							<h3 class="album-title">Demo</h3>
 							<p class="album-year">2011</p>
 							<ol class="album-tracks">
-								<li>1971</li>
-								<li>True Grit</li>
-								<li>Gentlemen Wash Their Hands</li>
-								<li>Existential Crisis For Only $400 A Month</li>
-								<li>White Lies</li>
-								<li>The Movement</li>
+								<li>Kids of the 22nd Century</li>
+								<li>I Wanna Live</li>
+								<li>Second Best</li>
+								<li>Zero Tolerance Program</li>
 							</ol>
 							
 							<p>Available on <a href="#">Bandcamp</a>.</p>
@@ -111,14 +107,22 @@
 				</ul>
 			</section>
 			
-			<section id="band" class="container">
+			<section id="band" class="container cf">
 				<h2 class="title">Band</h2 class="title">
 				
-				<img class="band-picture" src="img/1971.jpg" alt="Band picture" />
+				<div class="list-pic">
+					<img src="img/1971.jpg" alt="Band picture" />
+				</div>
 				
-				<div class="band-bio">
+				<div class="list-info">
 					<p>Punk rock birthed in the woods of the Vernon, Ontario</p>
 					<p>Lorem ipsum dolor sit amet.</p>
+					
+					<ul>
+						<li>Cam Cranston, bass guitar</li>
+						<li>Jory Strachan, drums</li>
+						<li>Garrett Iverson, guitar</li>
+					</ul>
 				</div>
 			</section>
 			
@@ -129,15 +133,69 @@
 			
 			<section id="merch" class="container">
 				<h2 class="title">Merch</h2 class="title">
+				
+				<ul class="list">
+					<li class="cf">
+						<div class="list-pic">
+							<img src="img/merch-st.jpg" />
+						</div>
+						<div class="list-info">
+							<p>Limited Edition Cassette Tape of the S/T, complete with fold out insert, lyrics, photo collage and a free download code.<p>
+
+							<p>Includes unlimited streaming of S/T via the free Bandcamp app, plus high-quality download in MP3, FLAC and more. </p>
+							
+							<p>Available on <a href="#">Bandcamp</a>.</p>
+						</div>
+					</li>
+					<li class="cf">
+						<div class="list-pic">
+							<img src="img/merch-law.jpg" />
+						</div>
+						<div class="list-info">
+							<p>DIY baby, handmade and signed on the inside, these puppies are sure to make your parents scream at your no good, dirty rotten, rock 'n' roll music.<p>
+
+							<p>Includes unlimited streaming of Law of Club and Fang via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.</p>
+							
+							<p>Available on <a href="#">Bandcamp</a>.</p>
+						</div>
+					</li>
+				</ul>
+				
 			</section>
 			
 			<section id="contact" class="container">
-				<h2 class="title">Contact</h2 class="title">
+				<h2 class="title">Contact</h2>
 				
-				<div class="fb-like-box" data-href="https://www.facebook.com/pages/1971/216714698355083" data-colorscheme="dark" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false"></div>
+				<ul class="list">
+					<li>
+						<div class="list-pic">
+							<h3>Email</h3>
+						</div>
+						<div class="list-info">
+							<a href="mailto:email@1971canada.com">email@1971canada.com</a>
+						</div>
+					</li>
+					<li>
+						<div class="list-pic">
+							<h3>Facebook</h3>
+						</div>
+						<div class="list-info">
+							<div class="fb-like-box" data-href="https://www.facebook.com/pages/1971/216714698355083" data-colorscheme="dark" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false"></div>
+						</div>
+					</li>
+					<li>
+						<div class="list-pic">
+							<h3>Twitter</h3>
+						</div>
+						<div class="list-info">
+							<a href="https://twitter.com/1971canada" class="twitter-follow-button" data-show-count="false">Follow @1971canada</a>
+						</div>
+					</li>
+				</ul>
+				
 				
 				<p>
-					<a href="https://twitter.com/1971canada" class="twitter-follow-button" data-show-count="false">Follow @1971canada</a>
+					
 				</p>
 			</section>
 		</div>
