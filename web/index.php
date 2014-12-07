@@ -52,7 +52,7 @@
 				<ul class="list">
 					<li class="cf">
 						<div class="list-pic album-embed">
-							<iframe src="https://bandcamp.com/EmbeddedPlayer/album=1828195228/size=large/bgcol=333333/linkcol=2ebd35/minimal=true/transparent=true/" seamless><a href="http://1971canada.bandcamp.com/album/s-t">S/T by 1971</a></iframe>
+							<iframe src="https://bandcamp.com/EmbeddedPlayer/album=1828195228/size=large/bgcol=333333/linkcol=EEEEEE/minimal=true/transparent=true/" seamless><a href="http://1971canada.bandcamp.com/album/s-t">S/T by 1971</a></iframe>
 						</div>
 						<div class="list-info">
 							<h3 class="album-title">S/T</h3>
@@ -71,7 +71,7 @@
 					</li>
 					<li class="cf">
 						<div class="list-pic album-embed">
-							<iframe src="https://bandcamp.com/EmbeddedPlayer/album=3081933480/size=large/bgcol=333333/linkcol=2ebd35/minimal=true/transparent=true/" seamless><a href="http://1971canada.bandcamp.com/album/s-t">Law of Club and Fang by 1971</a></iframe>
+							<iframe src="https://bandcamp.com/EmbeddedPlayer/album=3081933480/size=large/bgcol=333333/linkcol=EEEEEE/minimal=true/transparent=true/" seamless><a href="http://1971canada.bandcamp.com/album/s-t">Law of Club and Fang by 1971</a></iframe>
 						</div>
 						<div class="list-info">
 							<h3 class="album-title">Law of Club and Fang</h3>
@@ -89,7 +89,7 @@
 					</li>
 					<li class="cf">
 						<div class="list-pic album-embed">
-							<iframe src="https://bandcamp.com/EmbeddedPlayer/album=1443907012/size=large/bgcol=333333/linkcol=2ebd35/minimal=true/transparent=true/" seamless><a href="http://1971canada.bandcamp.com/album/s-t">Demo by 1971</a></iframe>
+							<iframe src="https://bandcamp.com/EmbeddedPlayer/album=1443907012/size=large/bgcol=333333/linkcol=EEEEEE/minimal=true/transparent=true/" seamless><a href="http://1971canada.bandcamp.com/album/s-t">Demo by 1971</a></iframe>
 						</div>
 						<div class="list-info">
 							<h3 class="album-title">Demo</h3>
