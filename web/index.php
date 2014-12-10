@@ -40,6 +40,7 @@
 					<li><a href="#music">Music</a>
 					<li><a href="#band">Band</a>
 					<li><a href="#shows">Shows</a>
+					<li><a href="#videos">Videos</a>
 					<li><a href="#merch">Merch</a>
 					<li><a href="#contact">Contact</a>
 				</ul>
@@ -95,7 +96,7 @@
 							<h3 class="album-title">Demo</h3>
 							<p class="album-year">2011</p>
 							<ol class="album-tracks">
-								<li>Kids of the 22nd Century</li>
+								<li>Kids of the 22<sup>nd</sup> Century</li>
 								<li>I Wanna Live</li>
 								<li>Second Best</li>
 								<li>Zero Tolerance Program</li>
@@ -129,6 +130,13 @@
 			<section id="shows" class="container">
 				<h2 class="title">Shows</h2>
 				<a href="http://www.songkick.com/artists/341631" class="songkick-widget" data-theme="light" data-font-color="#fefefe" data-background-color="transparent">Tour dates</a>
+			</section>
+			
+			<section id="videos" class="container">
+				<h2 class="title">Videos</h2>
+				
+				<iframe width="420" height="315" src="//www.youtube.com/embed/jNqGRZJvRN4" frameborder="0" allowfullscreen></iframe>
+				
 			</section>
 			
 			<section id="merch" class="container">
