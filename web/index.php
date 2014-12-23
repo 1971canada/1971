@@ -7,6 +7,7 @@
 		
 		<!-- Facebook share -->
 		<meta property="og:url" content="http://<?php echo $_SERVER['SERVER_NAME']; ?>"/>
+		<meta property="og:type" content="music.musician"/>
 		<meta property="og:title" content="1971"/>
 		<meta property="og:description" content="Punk rock birthed in the woods of the Vernon, Ontario."/>
 		<meta property="og:image" content="http://<?php echo $_SERVER['SERVER_NAME']; ?>/img/share.jpg"/>
