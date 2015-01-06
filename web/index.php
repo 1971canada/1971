@@ -35,7 +35,12 @@
 		<h1><span>1971</span></h1>
 		
 		<header>
-			<nav>
+			<nav id="nav" class="nav-collapsed">
+				<ul>
+					<li><a class="toggle-nav" href="#music">&#9776; Menu</a>
+				</ul>
+			</nav>
+			<nav class="nav-expanded nav-expanded-hide">
 				<ul>
 					<li><a href="#music">Music</a>
 					<li><a href="#band">Band</a>
@@ -180,7 +185,7 @@
 							<h3>Email</h3>
 						</div>
 						<div class="list-info">
-							<a href="mailto:email@1971canada.com">email@1971canada.com</a>
+							<a href="mailto:info@1971canada.com">info@1971canada.com</a>
 						</div>
 					</li>
 					<li>
@@ -200,11 +205,6 @@
 						</div>
 					</li>
 				</ul>
-				
-				
-				<p>
-					
-				</p>
 			</section>
 		</div>
 		
@@ -213,6 +213,7 @@
 		
 		<!-- Songkick / Tourbox -->
 		<script src="//widget.songkick.com/widget.js"></script>
+		
 		<!-- Facebook -->
 		<script>
 			window.fbAsyncInit = function() {
@@ -231,9 +232,14 @@
 				fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));
 		</script>
+		
 		<!-- Twitter -->
 		<script>
 			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 		</script>
+		
+		<!-- SquareSend -->
+		<script src="//squaresend.com/squaresend.js"></script>
+		<script>sqs_title = "Contact"</script>
 	</body>
 </html>
