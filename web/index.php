@@ -141,7 +141,7 @@
 			<section id="videos" class="container">
 				<h2 class="title">Videos</h2>
 				
-				<iframe width="420" height="315" src="//www.youtube.com/embed/jNqGRZJvRN4" frameborder="0" allowfullscreen></iframe>
+				<iframe width="420" height="315" src="//www.youtube.com/embed/jNqGRZJvRN4" frameborder="0" class="video" allowfullscreen></iframe>
 				
 			</section>
 			
@@ -186,7 +186,7 @@
 							<h3>Email</h3>
 						</div>
 						<div class="list-info">
-							<a href="mailto:info@1971canada.com">info@1971canada.com</a>
+							<a href="mailto:3wc98aug">aW5mb0AxOTcxY2FuYWRhLmNvbQ==</a>
 						</div>
 					</li>
 					<li>

@@ -347,6 +347,11 @@ nav ul li a:hover {
 	padding:0 0 0.9rem 0;
 }
 
+.video {
+	width:100%;
+	max-width:420px;
+}
+
 @media (min-width: 701px) {
 	.nav-sticky {
 		font-size:0.7rem;
