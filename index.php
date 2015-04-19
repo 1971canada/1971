@@ -123,7 +123,6 @@
 				
 				<div class="list-info">
 					<p>Punk rock birthed in the woods of the Vernon, Ontario</p>
-					<p>Lorem ipsum dolor sit amet.</p>
 					
 					<ul>
 						<li>Cam Cranston, bass guitar</li>
