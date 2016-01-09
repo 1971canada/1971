@@ -2,8 +2,29 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+
 	<title>1971</title>
-	
+	<meta content="Bunch a hicks who know nothing about nothin&amp;#39;" name="description" />
+
+	<link rel="apple-touch-icon" sizes="57x57" 			href="/img/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" 			href="/img/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" 			href="/img/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" 			href="/img/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" 		href="/img/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" 		href="/img/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" 		href="/img/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" 		href="/img/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" 		href="/img/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  	href="/img/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" 	href="/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" 	href="/img/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" 	href="/img/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#000000">
+	<meta name="msapplication-TileImage" 				content="/img/ms-icon-144x144.png">
+	<meta name="theme-color" content="#000000">
+
+	<link href="/bower_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<style>
 		*, *:before, *:after {
 			margin:0;
@@ -13,15 +34,97 @@
 			box-sizing:border-box;
 		}
 
+		html, body {
+			width:100%;
+			height:100%;
+		}
+
 		body {
-			background-image:url(background.jpg);
+			background-image:url(/img/background.jpg);
 			background-size:cover;
 			background-position:center top;
 			background-repeat:no-repeat;
+			font-family:Helvetica, Arial, sans-serif;
+			font-size:150%;
+			text-align:center;
+		}
+
+		body, a {
+			color:#FFF;
+			text-decoration:none;
+		}
+
+		h1 {
+			padding:1rem;
+		}
+
+		h1 img {
+			width:100%;
+			max-width:300px;
+			height:auto;
+		}
+
+		nav {
+			display:block;
+			padding:1rem;
+			width:100%;
+			position:absolute;
+			bottom:0;
+			text-shadow:0px 0px 10px #000;
+		}
+
+		nav ul {
+			list-style:none;
+			text-transform:lowercase;
+		}
+
+		nav ul li {
+			display:inline-block;
+		}
+
+		nav ul li.bordered {
+			border-right:1px dotted #FFF;
+		}
+
+		nav ul li a {
+			display:inline-block;
+			padding:0rem 1rem;
 		}
 	</style>
 </head>
 <body>
+<h1>
+	<img src="/img/logo.png" alt="1971" class="logo">
+</h1>
 
+<nav>
+	<ul>
+		<li class="bordered">
+			<a href="https://1971canada.bandcamp.com/" target="_blank">
+				Music
+			</a>
+		</li>
+		<li class="bordered">
+			<a href="https://www.songkick.com/artists/341631-1971" target="_blank">
+				Tour dates
+			</a>
+		</li>
+		<li>
+			<a href="https://www.facebook.com/1971-216714698355083" target="_blank">
+				<span class="fa fa-facebook-square"></span>
+			</a>
+		</li>
+		<li>
+			<a href="https://www.twitter.com/1971canada" target="_blank">
+				<span class="fa fa-twitter-square"></span>
+			</a>
+		</li>
+		<li>
+			<a href="https://www.instagram.com/1971canada" target="_blank">
+				<span class="fa fa-instagram"></span>
+			</a>
+		</li>
+	</ul>
+</nav>
 </body>
 </html>
