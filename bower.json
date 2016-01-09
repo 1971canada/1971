@@ -1,0 +1,22 @@
+{
+  "name": "1971canada",
+  "homepage": "https://github.com/1971canada/1971canada.github.io",
+  "authors": [
+    "Louis Roy <louisroy@lousiroy.net>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#~4.5.0"
+  }
+}
