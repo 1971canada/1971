@@ -4,24 +4,24 @@
 	<meta charset="UTF-8">
 
 	<title>1971</title>
-	<meta content="Bunch a hicks who know nothing about nothin&amp;#39;" name="description" />
+	<meta content="Bunch a hicks who know nothing about nothin&amp;#39;" name="description"/>
 
-	<link rel="apple-touch-icon" sizes="57x57" 			href="/img/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" 			href="/img/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" 			href="/img/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" 			href="/img/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" 		href="/img/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" 		href="/img/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" 		href="/img/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" 		href="/img/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" 		href="/img/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  	href="/img/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" 	href="/img/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" 	href="/img/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" 	href="/img/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/img/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
 	<link rel="manifest" href="/manifest.json">
 	<meta name="msapplication-TileColor" content="#000000">
-	<meta name="msapplication-TileImage" 				content="/img/ms-icon-144x144.png">
+	<meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
 	<meta name="theme-color" content="#000000">
 
 	<link href="/bower_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -45,13 +45,42 @@
 			background-position:center top;
 			background-repeat:no-repeat;
 			font-family:Helvetica, Arial, sans-serif;
-			font-size:150%;
+			font-size:125%;
 			text-align:center;
+			letter-spacing:-0.03rem;
+		}
+
+		@media (max-width: 1024px) {
+			body {
+				font-size:125%;
+			}
+		}
+
+		@media (max-width: 600px) {
+			body {
+				font-size:100%;
+			}
 		}
 
 		body, a {
 			color:#FFF;
 			text-decoration:none;
+		}
+
+		.wrapper {
+			display:flex;
+			flex-direction:column;
+			justify-content:space-between;
+			width:40%;
+			height:100%;
+			margin:0 auto;
+			position:relative;
+		}
+
+		@media (max-width: 600px) {
+			.wrapper {
+				width:100%;
+			}
 		}
 
 		h1 {
@@ -64,12 +93,41 @@
 			height:auto;
 		}
 
+		@media (max-width: 600px) {
+			h1 img {
+				width:50%;
+			}
+		}
+
+		.content {
+			position:relative;
+			flex-grow:2;
+			background:rgba(0, 0, 0, 0.5);
+			box-shadow:0px 0px 0.5rem rgba(0,0,0,0.5);
+			border-radius:2px;
+			display:none;
+		}
+
+		.content:after {
+			top: 100%;
+			left: 50%;
+			border:0px solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: rgba(136, 183, 213, 0);
+			border-top-color: rgba(0, 0, 0, 0.5);
+			border-width: 0.5rem;
+			margin-left: 2.5rem;
+		}
+
 		nav {
 			display:block;
-			padding:1rem;
+			align-self:flex-end;
 			width:100%;
-			position:absolute;
-			bottom:0;
+			padding:1rem;
 			text-shadow:0px 0px 10px #000;
 		}
 
@@ -78,53 +136,109 @@
 			text-transform:lowercase;
 		}
 
-		nav ul li {
-			display:inline-block;
+		nav ul:first-child {
+
 		}
 
-		nav ul li.bordered {
-			border-right:1px dotted #FFF;
+		nav ul li {
+			position:relative;
+			display:inline-block;
 		}
 
 		nav ul li a {
 			display:inline-block;
+			padding:0.5rem 1rem;
+		}
+
+		nav ul li a:hover {
+			opacity:0.75;
+		}
+
+		nav ul.labels li:after {
+			content:'';
+			display:block;
+			width:0;
+			height:50%;
+			position:absolute;
+			top:50%;
+			right:0;
+			border-right:1px dotted #FFF;
+			transform:translate(0%, -50%);
+		}
+
+		nav ul.labels li:last-child:after {
+			display:none;
+		}
+
+		nav ul li.text-item a {
 			padding:0rem 1rem;
 		}
 	</style>
 </head>
 <body>
-<h1>
-	<img src="/img/logo.png" alt="1971" class="logo">
-</h1>
+<div class="wrapper">
+	<h1>
+		<img src="/img/logo.png" alt="1971" class="logo">
+	</h1>
 
-<nav>
-	<ul>
-		<li class="bordered">
-			<a href="https://1971canada.bandcamp.com/" target="_blank">
-				Music
-			</a>
-		</li>
-		<li class="bordered">
-			<a href="https://www.songkick.com/artists/341631-1971" target="_blank">
-				Tour dates
-			</a>
-		</li>
-		<li>
-			<a href="https://www.facebook.com/1971-216714698355083" target="_blank">
-				<span class="fa fa-facebook-square"></span>
-			</a>
-		</li>
-		<li>
-			<a href="https://www.twitter.com/1971canada" target="_blank">
-				<span class="fa fa-twitter-square"></span>
-			</a>
-		</li>
-		<li>
-			<a href="https://www.instagram.com/1971canada" target="_blank">
-				<span class="fa fa-instagram"></span>
-			</a>
-		</li>
-	</ul>
-</nav>
+	<div class="content" id="tour-dates">
+		<a
+			href="http://www.songkick.com/artists/341631"
+			class="songkick-widget"
+			data-theme="light"
+			data-detect-style="true"
+			data-background-color="transparent">
+			1971 tour dates
+		</a>
+	</div>
+
+	<nav>
+		<ul class="labels">
+			<li>
+				<a href="https://1971canada.bandcamp.com/music" target="_blank">
+					Music
+				</a>
+			<li>
+				<a href="https://www.songkick.com/artists/341631-1971" data-target="tour-dates" target="_blank">
+					Tour dates
+				</a>
+		</ul>
+		<ul class="icons">
+			<li>
+				<a href="https://www.facebook.com/1971-216714698355083" target="_blank">
+					<span class="fa fa-facebook-square"></span>
+				</a>
+			<li>
+				<a href="https://www.twitter.com/1971canada" target="_blank">
+					<span class="fa fa-twitter-square"></span>
+				</a>
+			<li>
+				<a href="https://www.instagram.com/1971canada" target="_blank">
+					<span class="fa fa-instagram"></span>
+				</a>
+			<li>
+				<a href="https://www.youtube.com/playlist?list=PLjdd75axRaXGh5UbqXivJk5CMg9I3Breo" target="_blank">
+					<span class="fa fa-youtube-square"></span>
+				</a>
+			<li>
+				<a href="mailto:3wc98aug" target="_blank">
+					<span class="fa fa-envelope-square"></span>
+				</a>
+		</ul>
+	</nav>
+</div>
+<script src="//widget.songkick.com/widget.js"></script>
+<script src="//squaresend.com/squaresend.js"></script>
+<script>sqs_title = "Contact"</script>
+<script>
+	var $tourDates = document.getElementById('tour-dates');
+	var $tourDatesTrigger = document.querySelector('[data-target="tour-dates"]');
+
+	$tourDatesTrigger.addEventListener('click', function(ev) {
+		ev.preventDefault();
+
+		$tourDates.style.display = ($tourDates.style.display === 'block') ? 'none' : 'block';
+	});
+</script>
 </body>
 </html>
