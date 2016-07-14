@@ -110,7 +110,14 @@
 			}
 		}
 
-		.content {
+		.tour-dates {
+			width:100%;
+			height:100%;
+			position:absolute;
+			overflow:scroll;
+		}
+
+		.tour-dates-wrapper {
 			position:relative;
 			flex-grow:2;
 			-webkit-flex-grow:2;
@@ -118,10 +125,9 @@
 			box-shadow:0px 0px 0.5rem rgba(0,0,0,0.5);
 			border-radius:2px;
 			display:none;
-			overflow:scroll;
 		}
 
-		.content:after {
+		.tour-dates-wrapper:after {
 			top: 100%;
 			left: 50%;
 			border:0px solid transparent;
@@ -194,15 +200,17 @@
 		<img src="/img/logo.png" alt="1971" class="logo">
 	</h1>
 
-	<div class="content" id="tour-dates">
-		<a
-			href="http://www.songkick.com/artists/341631"
-			class="songkick-widget"
-			data-theme="light"
-			data-detect-style="true"
-			data-background-color="transparent">
-			1971 tour dates
-		</a>
+	<div class="tour-dates-wrapper">
+		<div class="tour-dates">
+			<a
+				href="http://www.songkick.com/artists/341631"
+				class="songkick-widget"
+				data-theme="light"
+				data-detect-style="true"
+				data-background-color="transparent">
+				1971 tour dates
+			</a>
+		</div>
 	</div>
 
 	<nav>
@@ -255,11 +263,13 @@
 <script src="//squaresend.com/squaresend.js"></script>
 <script>sqs_title = "Contact"</script>
 <script>
-	var $tourDates = document.getElementById('tour-dates');
+	var $tourDates = document.querySelector('.tour-dates-wrapper');
 	var $tourDatesTrigger = document.querySelector('[data-target="tour-dates"]');
 
 	$tourDatesTrigger.addEventListener('click', function(ev) {
 		ev.preventDefault();
+
+		console.log($tourDates.style.display);
 
 		$tourDates.style.display = ($tourDates.style.display === 'block') ? 'none' : 'block';
 	});
