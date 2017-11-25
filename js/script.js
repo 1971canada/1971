@@ -19,7 +19,7 @@ $(window).on('resize load', function (ev) {
 
 $(window).on('scroll load', function (ev) {
 	var position = window.scrollY / document.documentElement.clientHeight;
-	$main.css('opacity', Math.max(1 - position, 0.5));
+	$main.css('opacity', Math.max(1 - position, 0.25));
 	$return.css('opacity', Math.min(position, 1));
 }).trigger('scroll');
 
