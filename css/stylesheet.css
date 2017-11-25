@@ -167,6 +167,9 @@ blockquote {
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	background-image: url(../img/poster.jpg);
+	background-size: cover;
+	background-position: center center;
 }
 
 .main .background video {
